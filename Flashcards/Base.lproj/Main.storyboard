@@ -87,6 +87,9 @@
                                 <state key="normal" title="Prev">
                                     <color key="titleColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <state key="disabled">
+                                    <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                                </state>
                                 <connections>
                                     <action selector="didTapPrev:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mB7-R3-ctu"/>
                                 </connections>
@@ -97,6 +100,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Next">
                                     <color key="titleColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="disabled">
+                                    <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
                                 </state>
                                 <connections>
                                     <action selector="didTapNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zU6-ux-401"/>
@@ -111,12 +117,14 @@
                         </connections>
                     </view>
                     <connections>
+                        <outlet property="NextButton" destination="iXw-pr-YBQ" id="7yP-aU-z9v"/>
                         <outlet property="backLabel" destination="Co4-ic-ceO" id="ru3-iZ-nAF"/>
                         <outlet property="button1" destination="Wn4-Hh-AdH" id="qnr-QV-ZDe"/>
                         <outlet property="button2" destination="EkA-jn-W5r" id="hLw-5r-LFW"/>
                         <outlet property="button3" destination="Pw0-Bm-lEp" id="RiV-dK-5gc"/>
                         <outlet property="card" destination="FT0-HS-f8h" id="jU6-6Z-yew"/>
                         <outlet property="frontLabel" destination="Di4-RJ-MaX" id="OVF-Oe-cyO"/>
+                        <outlet property="prevButton" destination="Ngn-3h-xVq" id="EXc-kX-KeR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
